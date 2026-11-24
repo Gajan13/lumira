@@ -1,0 +1,43 @@
+name: Feature
+description: A new page, section, product, form or improvement
+labels: [feature]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What the visitor or the client gets.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Checkable bullets.
+      placeholder: "- [ ] …"
+    validations:
+      required: true
+  - type: textarea
+    id: files
+    attributes:
+      label: Affected files (before → after)
+  - type: textarea
+    id: content
+    attributes:
+      label: Content needed from the client
+      description: Copy, photos, specs, prices, contact details.
+  - type: dropdown
+    id: tier
+    attributes:
+      label: Risk tier
+      description: See docs/agents/risk-tiers.md
+      options:
+        - "3 — normal"
+        - "2 — careful"
+        - "1 — critical"
+    validations:
+      required: true
+  - type: textarea
+    id: out-of-scope
+    attributes:
+      label: Out of scope

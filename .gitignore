@@ -39,3 +39,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# agent gate logs
+/.check-logs/
+
+# personal Claude Code overrides
+.claude/settings.local.json
+
+# keep the documented env template
+!.env.example
